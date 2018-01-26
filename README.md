@@ -1,6 +1,6 @@
 ﻿# scrollanimate 
  
-[scrollanimate 官方网站](http://www.zhchina.top)
+[scrollanimate 官方网站](http://sa.zhchina.top)
 
 这是一款超轻量级的 jQuery 插件。 当你滑动鼠标滚轮，滚到当前元素会产生一个超棒的css3动画，与wow不同的是再次滚回还会再次产生动画
 
@@ -10,8 +10,11 @@
 
 ## 更新日志
 
-### V1.0.1
+### V1.0.2
+判断元素是否移出界面更准确
 
+### V1.0.1 
+正式发布
 
 ## 开发人员
 
@@ -31,12 +34,12 @@
 1. 引入animate.css，当然你也可以不引入animate.css，选择自己定义动画名。
 2. 在引入 jQuery 后，引入 scrollanimate.js 。
 3. 然后在 `$(function(){})` 里使用 `$(selector).scrollanimate("动画名")` 即可。
-4. 或者你想传入多个参数<br />
-`$(selector).scrollanimate({`<br />
-		`"key":"动画名",	//必填。`<br />
-		`"duration":"1s",//播放时长，默认1s`<br />
-		`"delay":"0s",	//延迟播放,默认0s`<br />
-		`"count":"1"	//播放次数 默认一次`<br />
-`})`
+4.或者你想传入多个参数
+`$(selector).scrollanimate({
+	"key":"动画名",	//必填。
+	"duration":"1s",//播放时长，默认1s
+	"delay":"0s",	//延迟播放,默认0s
+	"count":"1"	//播放次数 默认一次
+})`
 
 
