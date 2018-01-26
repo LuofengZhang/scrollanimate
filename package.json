@@ -1,0 +1,38 @@
+{
+    "name": "scrollanimate",
+    "title": "滚动动画",
+    "description": "当你滑动鼠标滚轮，滚到当前元素会产生一个超棒的css3动画，与wow不同的是再次滚回还会再次产生动画",
+    "keywords": [
+        "key",
+        "duration",
+        "delay",
+        "count",
+        "scroll",
+        "animate"
+    ],
+    "version": "1.0.1",
+    "author": {
+        "name": "LuofengZhang",
+        "email": "luofengzh@163.com",
+        "url": "https://github.com/luofengzhang"
+    },
+    "maintainers": [
+        {
+           "name": "LuofengZhang",
+            "email": "luofengzh@163.com",
+            "url": "https://github.com/luofengzhang"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+        }
+    ],
+    "download": "https://github.com/luofengzhang/scrollanimate",
+     "dependencies": {
+        "jquery": ">=1.5"
+    }
+        
+    
+}
