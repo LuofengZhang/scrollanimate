@@ -38,37 +38,35 @@
 			$this.addClass('animated '+options.key);
 			$this.lock=false;
 		}
-		$(window).scroll(function(){
-            var before = $(window).scrollTop();
-            $(window).scroll(function() {
-                var after = $(window).scrollTop();
-                if (before<after) {
-                    before = after;
-                    //判断下划时元素全部进入界面
-                    if ($this.offset().top+$this.height()<=$(window).scrollTop()+$(window).height()&&$this.offset().top+$this.height()>$(window).scrollTop()&&$this.lock) {
-						$this.addClass('animated '+options.key);
-						$this.lock=false;
-					}
-                    //判断下划时元素全部离开界面
-                    else if($this.offset().top+$this.height()<$(window).scrollTop()&&!$this.lock){
-						$this.removeClass(options.key);
-						$this.lock=true;
-					}
-                };
-                if (before>after) {
-                    before = after;
-                    //判断上划时元素全部进入界面
-                    if ($this.offset().top>=$(window).scrollTop()&&$this.offset().top+$this.height()<=$(window).scrollTop()+$(window).height()&&$this.lock) {
-						$this.addClass('animated '+options.key);
-						$this.lock=false;
-					}
-                    ////判断上划时元素全部离开界面
-                    else if($this.offset().top>$(window).scrollTop()+$(window).height()&&!$this.lock){
-						$this.removeClass(options.key);
-						$this.lock=true;
-					}
-                };
-            });
+        var before = $(window).scrollTop();
+        $(window).scroll(function() {
+            var after = $(window).scrollTop();
+            if (before<after) {
+                before = after;
+                //判断下划时元素全部进入界面
+                if ($this.offset().top+$this.height()<=$(window).scrollTop()+$(window).height()&&$this.offset().top+$this.height()>$(window).scrollTop()&&$this.lock) {
+					$this.addClass('animated '+options.key);
+					$this.lock=false;
+				}
+                //判断下划时元素全部离开界面
+                else if($this.offset().top+$this.height()<$(window).scrollTop()&&!$this.lock){
+					$this.removeClass(options.key);
+					$this.lock=true;
+				}
+            };
+            if (before>after) {
+                before = after;
+                //判断上划时元素全部进入界面
+                if ($this.offset().top>=$(window).scrollTop()&&$this.offset().top+$this.height()<=$(window).scrollTop()+$(window).height()&&$this.lock) {
+					$this.addClass('animated '+options.key);
+					$this.lock=false;
+				}
+                ////判断上划时元素全部离开界面
+                else if($this.offset().top>$(window).scrollTop()+$(window).height()&&!$this.lock){
+					$this.removeClass(options.key);
+					$this.lock=true;
+				}
+            };
         });
     	//创建Scrollanimate的实例
 		var scrollanimate = new Scrollanimate(this, options);
