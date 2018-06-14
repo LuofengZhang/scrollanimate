@@ -1,6 +1,6 @@
 ﻿# scrollanimate 
  
-[scrollanimate 官方网站](http://sa.zhchina.top)
+[scrollanimate 官方网站](http://zhchina.top/sa)
 
 这是一款超轻量级的 jQuery 插件。 当你滑动鼠标滚轮，滚到当前元素会产生一个超棒的css3动画，与wow不同的是再次滚回还会再次产生动画
 
@@ -18,7 +18,7 @@
 
 ## 开发人员
 
-本插件由本人 LuofengZhang 独立开发，您可以：[查看我的个人介绍](http://www.zhchina.top)
+本插件由本人 LuofengZhang 独立开发，您可以：[查看我的个人介绍](http://zhchina.top)
 
 ## 依赖
 
