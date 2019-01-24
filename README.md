@@ -35,11 +35,11 @@
 2. 在引入 jQuery 后，引入 scrollanimate.js 。
 3. 然后在 `$(function(){})` 里使用 `$(selector).scrollanimate("动画名")` 即可。
 4.或者你想传入多个参数
-`$(selector).scrollanimate({
+``$(selector).scrollanimate({
 	"key":"动画名",	//必填。
 	"duration":"1s",//播放时长，默认1s
 	"delay":"0s",	//延迟播放,默认0s
 	"count":"1"	//播放次数 默认一次
-})`
+})``
 
 
